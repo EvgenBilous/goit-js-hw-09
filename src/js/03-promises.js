@@ -26,11 +26,7 @@ function handleSubmit(event) {
       });
     delay += step;
   }
-
-  console.dir(event.target);
 }
-
-//console.log(refs.delayEl, refs.amountEl, refs.stepEl);
 
 function createPromise(position, delay) {
   const shouldResolve = Math.random() > 0.3;
@@ -45,22 +41,3 @@ function createPromise(position, delay) {
     }, delay);
   });
 }
-
-const user = {
-  userName: 'userName',
-  lastName: 'test',
-  age: 20,
-  job: 'Dev',
-  salary: 1,
-};
-
-// function showUserInfo({ age, lastName, userName }) {
-//   console.log(`${userName} ${lastName} ${age}`);
-// }
-function showUserInfo(user) {
-  const { job, salary } = user;
-
-  console.log(job, salary);
-}
-
-showUserInfo(user);
